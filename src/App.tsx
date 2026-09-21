@@ -85,7 +85,7 @@ function ShareActions() {
   const shareLink = async () => {
     if (navigator.share) {
       await navigator.share({
-        title: 'دعوة أحمد وكريمته',
+        title: 'دعوة أحمد وضحى',
         text: 'يسعدنا دعوتكم لمشاركتنا فرحتنا',
         url: invitationUrl,
       });
@@ -101,9 +101,9 @@ function ShareActions() {
       'BEGIN:VEVENT',
       'DTSTART:20261114T150000Z',
       'DTEND:20261114T190000Z',
-      'SUMMARY: زفاف أحمد وكريمته',
+      'SUMMARY: زفاف أحمد وضحى',
       'LOCATION:صالة النعمان',
-      'DESCRIPTION:دعوة زفاف أحمد عاشور و كريمته ',
+      'DESCRIPTION:دعوة زفاف أحمد عاشور و وضحى العكش ',
       'END:VEVENT',
       'END:VCALENDAR',
     ].join('\r\n');
@@ -236,7 +236,7 @@ function OpeningCurtain({ dismissed, onOpen }: { dismissed: boolean; onOpen: () 
           <Ornament />
           <p className="opening-card__intro">بسم الله الرحمن الرحيم<br />وبكل الحب والفرح</p>
           <div className="opening-card__names" data-testid="text-opening-couple">
-            أحمد عاشور <span aria-hidden="true">&</span>  كريمته
+            أحمد عاشور <span aria-hidden="true">&</span>  ضحى العكش
           </div>
           <div className="opening-card__date" data-testid="text-opening-date">13/11/2026</div>
         </div>
@@ -279,7 +279,7 @@ function Home() {
           <h1 className="hero-section__title reveal reveal--delay-1" data-testid="text-couple-names">
             أحمد عاشور
             <span className="hero-section__ampersand" aria-hidden="true">&</span>
-            كريمته 
+            ضحى العكش 
           </h1>
           <div className="hero-section__date reveal reveal--delay-2" data-testid="text-event-date">13/11/2026</div>
           <p className="hero-section__note reveal reveal--delay-3" data-testid="text-hero-note">فصلٌ جديد يبدأ بحضوركم</p>
@@ -372,7 +372,7 @@ function Home() {
           </Reveal>
           <div className="closing-section__footer">
             <div className="closing-section__monogram" aria-hidden="true">A <Heart size={13} fill="currentColor" /> D</div>
-            <p className="closing-section__thanks" data-testid="text-closing-thanks">مع محبتنا، أحمد وكريمته</p>
+            <p className="closing-section__thanks" data-testid="text-closing-thanks">مع محبتنا، أحمد وضحى</p>
 
 
             <p className="closing-section__date">13/11/2026</p>
