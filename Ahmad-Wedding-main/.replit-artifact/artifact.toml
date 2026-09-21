@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Dhua & Ahmed Wedding Invitation"
+description = "A romantic front-end-only wedding invitation website for Dhua Alaksh and Ahmed Ashour, celebrating their wedding at Qasr Benaam on 13/11/2026."
+version = "1.0.0"
+id = "artifacts/dhua-ahmed-wedding"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18491
+
+[services.development]
+run = "pnpm --filter @workspace/dhua-ahmed-wedding run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/dhua-ahmed-wedding", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/dhua-ahmed-wedding/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18491"
+BASE_PATH = "/"
