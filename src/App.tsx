@@ -48,7 +48,7 @@ function Countdown() {
       <Reveal testId="reveal-countdown">
         <p className="eyebrow"></p>
         <h2 className="countdown-section__heading">نقترب من أجمل يوم</h2>
-        <p className="countdown-section__intro">نعدّ اللحظات حتى نلتقي بكم في صالة النعمان</p>
+        <p className="countdown-section__intro">نعدّ اللحظات حتى نلتقي بكم في صالة مؤتة</p>
         <div className="countdown-grid" dir="rtl" aria-live="polite" data-testid="wedding-countdown">
           {units.map((unit) => (
             <div className="countdown-cell" key={unit.label}>
@@ -324,20 +324,20 @@ function Home() {
               <DetailRow title="اليوم" text="الجمعة · 13/11/2026" testId="day">
                 <CalendarDays size={21} strokeWidth={1.2} />
               </DetailRow>
-              <a
-                className="detail-row detail-row--link"
-                href="https://www.google.com/maps/search/?api=1&query=قاعة النعمان,31.99250146515074,35.86480110365035"
-                target="_blank"
-                rel="noreferrer"
-                data-testid="link-venue-location"
-                aria-label="فتح موقع صالة النعمان على الخريطة"
+           <a
+              className="detail-row detail-row--link"
+               href="https://www.google.com/maps/search/?api=1&query=قاعة مؤتة,31.910984581435315,35.91355974598049"
+              target="_blank"
+              rel="noreferrer"
+             data-testid="link-venue-location"
+             aria-label="فتح موقع صالة مؤتة على الخريطة"
               >
                 <div className="detail-row__icon" aria-hidden="true"><MapPin size={21} strokeWidth={1.2} /></div>
                 <div>
-                  <p className="detail-row__title">المكان</p>
-                  <p className="detail-row__text">صالة النعمان <span className="detail-row__action">فتح الخريطة</span></p>
+                   <p className="detail-row__title">المكان</p>
+                      <p className="detail-row__text">صالة مؤتة <span className="detail-row__action">فتح الخريطة</span></p>
                 </div>
-              </a>
+            </a>
               <DetailRow title="موعد اللقاء" text="ابتداءً من الساعة الثامنة والنصف مساءً" testId="time">
                 <Clock3 size={21} strokeWidth={1.2} />
               </DetailRow>
