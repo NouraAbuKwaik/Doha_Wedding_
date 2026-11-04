@@ -103,7 +103,7 @@ function ShareActions() {
       'DTEND:20261114T190000Z',
       'SUMMARY: زفاف أحمد وضحى',
       'LOCATION:صالة النعمان',
-      'DESCRIPTION:دعوة زفاف أحمد عاشور و وضحى العكش ',
+      'DESCRIPTION:دعوة زفاف أحمد حسن صالح عاشور و وضحى فايز أمين العكش ',
       'END:VEVENT',
       'END:VCALENDAR',
     ].join('\r\n');
