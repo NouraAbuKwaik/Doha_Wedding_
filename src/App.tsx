@@ -103,7 +103,7 @@ function ShareActions() {
       'DTEND:20261114T190000Z',
       'SUMMARY: زفاف أحمد وضحى',
       'LOCATION:صالة النعمان',
-      'DESCRIPTION:دعوة زفاف أحمد حسن صالح عاشور و وضحى فايز أمين العكش ',
+      'DESCRIPTION:دعوة زفاف أحمد عاشور و وضحى العكش ',
       'END:VEVENT',
       'END:VCALENDAR',
     ].join('\r\n');
@@ -236,7 +236,7 @@ function OpeningCurtain({ dismissed, onOpen }: { dismissed: boolean; onOpen: () 
           <Ornament />
           <p className="opening-card__intro">بسم الله الرحمن الرحيم<br />وبكل الحب والفرح</p>
           <div className="opening-card__names" data-testid="text-opening-couple">
-            أحمد عاشور <span aria-hidden="true">&</span>  ضحى العكش
+            أحمد حسن صالح عاشور <span aria-hidden="true">&</span>  ضحى فايز امين العكش
           </div>
           <div className="opening-card__date" data-testid="text-opening-date">13/11/2026</div>
         </div>
