@@ -235,9 +235,19 @@ function OpeningCurtain({ dismissed, onOpen }: { dismissed: boolean; onOpen: () 
           <div className="opening-card__eyebrow">دعوة خاصة</div>
           <Ornament />
           <p className="opening-card__intro">بسم الله الرحمن الرحيم<br />وبكل الحب والفرح</p>
-          <div className="opening-card__names" data-testid="text-opening-couple">
-            أحمد حسن صالح عاشور <span aria-hidden="true">&</span>  ضحى فايز امين العكش
-          </div>
+         <div className="opening-card__couple" data-testid="text-opening-couple">
+  <div className="opening-card__person">
+    <span className="opening-card__parent">ابن المرحوم حسن عاشور</span>
+    <span className="opening-card__name">أحمد</span>
+  </div>
+
+  <span className="opening-card__amp" aria-hidden="true">&</span>
+
+  <div className="opening-card__person">
+    <span className="opening-card__parent">كريمة الحاج فايز العكش</span>
+    <span className="opening-card__name">ضحى</span>
+  </div>
+</div>
           <div className="opening-card__date" data-testid="text-opening-date">13/11/2026</div>
         </div>
         <div className="opening-card__footer">
